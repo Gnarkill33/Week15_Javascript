@@ -1,3 +1,8 @@
 .container{
     list-style-type:none;
 }
+
+.minmax{
+    margin-top:20px;
+    font-weight: bolder;
+}

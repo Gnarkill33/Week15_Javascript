@@ -19,15 +19,13 @@ for (let i = 0; i < cities.length; i++) {
     oneCity.textContent = `Температура в г. ${cities[i]}: ${temperatures[i]}ºC`;
 }
 
-// Находим максимальную и минимальную температуру (дописать цикл, мин и макс значения)
-for (let i = 0; i < temperatures.length; i++) {
+// Находим максимальную и минимальную температуру 
+const maximum = Math.max(...temperatures);
 const maxTemp = document.createElement ('div');
 minmax.append(maxTemp);
-const maximum = Math.max(...temperatures);
 maxTemp.textContent = `Максимальная температура: ${maximum}ºC`;
 
-const minTemp = document.createElement ('div');
-maxTemp.append(minTemp);
 const minimum = Math.min(...temperatures);
+const minTemp = document.createElement ('div');
+minmax.append(minTemp);
 minTemp.textContent = `Минимальная температура: ${minimum}ºC`;
-}
